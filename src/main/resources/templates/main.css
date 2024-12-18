@@ -1,0 +1,638 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+#mainnav{
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+.navbar {
+    background-color: #ffffff;
+    padding: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Navbar Items */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Animation */
+.nav-link:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    color: #c30000;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+#nav{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+#name{
+    font-family: Garamond;
+    font-size: 30px;
+}
+#div2 {
+    background-color: rgb(224, 224, 226);
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#txt1, #txt2, #txt4 {
+    font-family: cursive;
+    position: absolute;
+    animation-duration: 2s;
+}
+#txt1 {
+    font-size: 40px;
+    margin-left: 100px;
+    top: 100px;
+    font-family: 'Dancing Script', cursive;
+    /* animation-name: slideInLeft; */
+}
+#txt2 {
+    font-size: 60px;
+    margin-left: 100px;
+    top: 200px;
+        font-family: 'Dancing Script', cursive;
+
+    /* animation-name: slideInLeft;
+    animation-duration: 2s; */
+}
+#txt4 {
+    font-size: 30px;
+    margin-left: 100px;
+    top: 300px;
+    /* animation-name: slideInLeft; */
+}
+.typing {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000000; /* Cursor effect */
+    display: inline-block;
+    color: #000000;
+    animation: blink 0.7s step-end infinite; /* Blink effect */
+
+}
+
+#txt2 {
+    margin-bottom: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#image1 {
+    width: 900px;
+    height: 400px;
+    margin-left: 400px;
+    position: absolute;
+    left: 90px;
+    right: 20px;
+    bottom: 0px;
+    /* animation-name: slideInRight;
+    animation-duration: 2s; */
+}
+/*
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
+
+#div3 {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(236, 226, 215);
+}
+#txt3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    /* animation-name: fadeIn;
+    animation-duration: 4s; */
+}
+#txtn{
+    font-size: 30px;
+    padding-top:80px ;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    /* animation-name: fadeIn;
+    animation-duration: 4s; */
+}
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+#vision{
+    width: 100%;
+    height: 520px;
+    color: rgb(0, 2, 103);
+    padding: 50px;
+    text-align: center;
+    background: #f4f4f4;
+    position: relative;
+
+}
+#d {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#d > div {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(34, 1, 123, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 25%; /* Adjust width as needed */
+}
+
+#d > div:hover {
+    transform: translateY(-10px);
+    background-color: rgba(34, 1, 123, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#d h3 {
+    transition: color 0.3s ease;
+}
+
+#d > div:hover h3 {
+    color: rgb(0, 0, 0);
+}
+
+#d > div:hover p {
+    font-weight: bold;
+}
+
+#d1{
+    width: 240px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#d2{
+    width: 240px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#d3{
+    width: 240px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#insta{
+margin-left: 10px;
+animation-name: fadeIn;
+animation-duration: 4s;
+}
+#insta1{
+margin-left: 10px;
+animation-name: fadeIn;
+animation-duration: 4s;
+}
+#insta2{
+margin-left: 10px;
+animation-name: fadeIn;
+animation-duration: 4s;
+}
+#insta3{
+margin-left: 10px;
+animation-name: fadeIn;
+animation-duration: 4s;
+}
+
+#div5 {
+    width: 50%;
+    height: 500px;
+
+}
+
+#div6 {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top:370px;
+    left: 100px;
+    /* animation-duration: 2s;
+    animation-name: slideInLeft;   */
+    transform: translateY(-10px); /* Moves the box upward */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #000000; /* Changes background color */
+}
+#div6:hover{
+    box-shadow: 2px 2px 8px #000000;
+}
+#div7{
+    font-size: 19x;
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 50px;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+    transform: translateY(-10px); /* Moves the box upward */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #000000; /* Changes background color */
+}
+#div7:hover{
+    box-shadow: 2px 2px 8px #000000;
+}
+#div4{
+    width: 100%;
+    height: 750px;
+    padding: 70px;
+    background-color: rgb(147,169,176);
+    position: relative;
+}
+#clg{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    transform: translateY(-10px); /* Moves the box upward */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #eaeaea; /* Changes background color */
+    animation-duration: 1s;
+    animation-name: slideInLeft;
+
+}
+#clg:hover {
+    box-shadow: 2px 2px 8px #ffffff;
+}
+#clg1{
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    box-shadow: 2px 2px 8px #ffffff;
+    transform: translateY(-10px); /* Moves the box upward */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #eaeaea; /* Changes background color */
+    animation-duration: 2s;
+    animation-name: slideInRight;
+}
+#clg1:hover {
+    box-shadow: 2px 2px 8px #ffffff;
+}
+#clg2{
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 330px;
+    box-shadow: 2px 2px 8px #ffffff;
+    transform: translateY(-10px); /* Moves the box upward */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #eaeaea; /* Changes background color */
+    animation-duration: 1s;
+    animation-name: slideInLeft;
+}
+#clg2:hover {
+    box-shadow: 2px 2px 8px #ffffff;
+}
+#education{
+    color: white;
+    font-family:serif;
+    font-size: 50px;
+    padding: 20px;
+}
+#edu1{
+    color: white;
+    padding: 20px;
+}
+#skills{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(0, 65, 75);
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Places the video behind other content */
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255); /* Text color */
+    z-index: 1; /* Ensures the overlay is above the video */
+}
+#htmlimg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 10px;}
+#htmlimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#cssimg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 10px;
+}
+#cssimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#bootimg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 20px;
+
+}
+#bootimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#javaimg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    left: 68%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 20px;
+}
+#javaimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#pythonimg{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 27%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+#pythonimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#sqlimg{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+#sqlimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#jsimg{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 70%;
+    left: 61%;
+    background-color: rgb(0, 255, 217);
+    border-radius: 10px;
+    padding: 10px;
+}
+#jsimg:hover{
+    box-shadow: 2px 2px 8px rgb(0, 255, 217);
+}
+#contribution{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: rgb(173,181,176);
+    /* padding: 5%; */
+}
+#git{
+    width: 100px;
+    height: 40px;
+     background-color: white;
+     border-radius: 20px;
+     padding: 5px;
+     text-align: center;
+}
+#git:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: black;
+}
+#col5{
+    padding: 5%;
+    float: left;
+    color: white;
+}
+#col6{
+    float: right;
+    position: absolute;
+    left: 60%;
+}
+
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+#foot1{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:10%;
+    left: 5%;
+}
+#btn{
+    width: 340px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#btn:hover{
+    box-shadow: 2px 2px 8px #ffffff;
+
+}
+#txt{
+    color: white;
+    font-size: 10px;
+    text-align: justify;
+}
+#foot2{
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    padding: 50px;
+    color: white;
+}
+#instag{
+    color: white;
+    padding: 10px;
+}
+#instag1{
+    color: white;
+    padding: 10px;
+}#instag2{
+    color: white;
+    padding: 10px;
+}#instag3{
+    color: white;
+    padding: 10px;
+}
+#foot3{
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    padding: 50px;
+    color: white;
+}

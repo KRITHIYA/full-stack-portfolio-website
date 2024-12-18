@@ -1,0 +1,229 @@
+#mainnav{
+    background-color: white;
+}
+.navbar {
+    background-color: #ffffff;
+    padding: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Navbar Items */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Animation */
+.nav-link:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Dropdown Styles */
+.nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-item {
+    color: rgb(0, 0, 0);
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+    color: #c30000;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+#nav{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+#li{
+    color: black;
+}
+#name{
+    font-family: Garamond;
+    font-size: 30px;
+}
+#ab1{
+    background-image: url(charlie\ &\ katie\ are.png);
+    width: 100%;
+    height:500px;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Center the image in the container */
+    background-repeat: no-repeat;
+
+}
+#ab2{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(233, 200, 200);
+    position: relative;
+}
+#para1{
+    font-family: 'Times New Roman', Times, serif;
+   padding-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(54, 54, 54);
+    opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Initially shifted down */
+  transition: opacity 1s ease, transform 2s ease;
+}
+#button1{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-left: 40%;
+    box-shadow: 2px 2px 8px #000000;
+}
+#button1:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px 8px #000000 ;
+}
+#port{
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#para1.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+  }
+#ab3{
+    width: 100%;
+    height: 1100px;
+    background-color: white;
+}
+#box{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    color: white;
+}
+#img2{
+    width: 300px;
+    height: 400px;
+}
+#para2{
+    padding-top: 10%;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+}
+#para3{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+
+}#para4{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+}
+#para5{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.466);
+}
+#project{
+    color: rgb(133, 91, 134)
+}
+#project:hover{
+    color: rgb(145, 37, 146)
+
+}
+
+
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+}
+#foot1{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:10%;
+    left: 5%;
+}
+#btn{
+    width: 340px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#btn:hover{
+    box-shadow: 2px 2px 8px #ffffff;
+
+}
+#txt{
+    color: white;
+    font-size: 10px;
+    text-align: justify;
+}
+#foot2{
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    padding: 50px;
+    color: white;
+}
+#instag{
+    color: white;
+    padding: 10px;
+}
+#foot3{
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    padding: 50px;
+    color: white;
+}

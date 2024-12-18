@@ -1,0 +1,70 @@
+#mainnav{
+    background-color: white;
+}
+#nav{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+#li{
+    color: black;
+}
+
+#pro1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(243, 241, 218);
+    position: relative;
+}
+#img1{
+    width: 400px;
+    height: 500px;
+}
+
+#p1{
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    text-align: left;
+    animation-name:fadeIn;
+    animation-duration: 4s;
+    text-shadow: 2px 2px 8px #c3c3c3;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#p2{
+    font-size: 15px;
+    text-align: left;
+    text-shadow: 2px 2px 8px #c3c3c3;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+#btn{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#btn:hover{
+    box-shadow: 2px 2px 8px #000000;
+
+}
+#pro2{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(206,217,229);
+    position: relative;
+}
